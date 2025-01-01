@@ -1,16 +1,10 @@
-import reactLogo from "./assets/react.svg";
+import WelcomeSection from "./section/WelcomeSection"
 
 function App() {
   return (
-    <div className="flex justify-center">
+    <div className="w-full h-[3000px] bg-dark">
       <div>
-        <a href="https://react.dev" target="_blank">
-          <img
-            src={reactLogo}
-            className="w-6 h-16 transition-transform transform hover:scale-110"
-            alt="React logo"
-          />
-        </a>
+        <WelcomeSection/>
       </div>
     </div>
   );
