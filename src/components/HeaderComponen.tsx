@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`sm:hidden bg-light/20  fixed right-0 pl-[28px] w-[200px] h-[360px] rounded-l-full py-4 shadow-lg flex flex-col items-center justify-center transform transition-transform duration-1000 ${
+        className={`sm:hidden bg-light/40 fixed right-0 pl-[34px] w-[200px] h-[360px] rounded-l-full py-4 shadow-lg flex flex-col items-center justify-center transform transition-transform duration-1000 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
