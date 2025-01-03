@@ -24,16 +24,16 @@ const Header = () => {
         <div className="sm:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none w-[40px] h-[40px]"
+            className="text-white focus:outline-none"
             onMouseEnter={() => setIsMenuButtonHovered(true)}
             onMouseLeave={() => setIsMenuButtonHovered(false)}
           >
             <img
               src={MenuIcon}
               alt="Menu Icon"
-              className={`transform transition-all duration-1000 ${
-                isMenuButtonHovered ? "rotate-90" : ""
-              } ${isMenuOpen ? "rotate-180" : ""}`}
+              className={`transform transition-all duration-500 ${
+                isMenuOpen ? "rotate-180" : ""
+              } ${isMenuButtonHovered ? "w-[36px] h-[36px]" : "w-[40px] h-[40px]"} `}
             />
           </button>
         </div>
