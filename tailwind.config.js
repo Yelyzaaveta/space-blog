@@ -16,6 +16,9 @@ export default {
           xl: '70px',    
         },
       },
+      rotate: {
+        '360': '360deg',
+      },
     },
   },
   plugins: [],
