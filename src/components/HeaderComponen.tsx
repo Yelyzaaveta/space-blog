@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Logo from "../assets/planet.png";
-import MenuIcon from "../assets/galaxy.gif";
+import Logo from "../assets/images/planet.png";
+import MenuIcon from "../assets/images/icons-gifs/galaxy.gif";
+import MenuList from "./MenuListComponent";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,17 +9,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const menuItems = ["Solarmi", "Earhter", "Planitum", "Sattline"];
-  const MenuList = ({ className }: { className: string }) => (
-    <ul className={`text-white text-xl ${className}`}>
-      {menuItems.map((item, index) => (
-        <li key={index} className="hover:text-light">
-          <a href="#">{item}</a>
-        </li>
-      ))}
-    </ul>
-  );
 
   return (
     <nav
@@ -42,8 +32,8 @@ const Header = () => {
               src={MenuIcon}
               alt="Menu Icon"
               className={`transform transition-all duration-1000 ${
-                isMenuButtonHovered ? "rotate-360" : ""
-              }`}
+                isMenuButtonHovered ? "rotate-90" : ""
+              } ${isMenuOpen ? "rotate-180" : ""}`}
             />
           </button>
         </div>
