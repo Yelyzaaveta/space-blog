@@ -30,8 +30,8 @@ function WelcomeSection() {
           data-aos-delay="450"
           className="text-white text-xl md:text-2xl text-center md:text-left"
         >
-          Explore the Wonders of the Universe!
-        </p>
+          Dive into the mysteries of space and time. Unlock the secrets of distant galaxies, explore the beauty of the stars, and journey through the endless wonders of the universe!
+          </p>
         <Button className="w-[100px] md:w-[260px] h-[40px] md:h-[60px] text-md md:text-xl">Spacing</Button>
       </div>
     </section>

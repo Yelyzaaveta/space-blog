@@ -1,13 +1,14 @@
 import { useEffect } from "react";
-import WelcomeSection from "./section/WelcomeSection"
+import WelcomeSection from "./section/WelcomeSection";
+import PlatesSection from "./section/PlatesSection";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-
   useEffect(() => {
     AOS.init({
-      duration: 1200, 
+      duration: 1200,
       easing: "ease-in-out",
       once: true,
     });
@@ -16,9 +17,10 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full h-[3000px] bg-dark">
+    <div className="w-full bg-dark">
       <div>
-        <WelcomeSection/>
+        <WelcomeSection />
+        <PlatesSection />
       </div>
     </div>
   );
