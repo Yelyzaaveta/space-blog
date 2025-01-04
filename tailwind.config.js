@@ -9,15 +9,15 @@ export default {
       },
       container: {
         padding: {
-          DEFAULT: '16px', 
-          sm: '24px',      
-          md: '40px',      
-          lg: '60px',      
-          xl: '70px',    
+          DEFAULT: "16px",
+          sm: "24px",
+          md: "40px",
+          lg: "60px",
+          xl: "70px",
         },
       },
       rotate: {
-        '360': '360deg',
+        360: "360deg",
       },
     },
   },
