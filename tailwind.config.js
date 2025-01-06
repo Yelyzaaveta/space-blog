@@ -19,6 +19,15 @@ export default {
       rotate: {
         360: "360deg",
       },
+      animation: {
+        smoothBounce: "smoothBounce 4s ease-in-out infinite",
+      },
+      keyframes: {
+        smoothBounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-200px)" },
+        },
+      },
     },
   },
   plugins: [],

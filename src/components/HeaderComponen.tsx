@@ -2,7 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/images/planet.png";
 import MenuIcon from "../assets/images/icons-gifs/rocket.gif";
 import MenuList from "./MenuListComponent";
-import PlanetImage from "../assets/images/dark-planet.jpg"
+import PlanetImage from "../assets/images/planets/dark-planet.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +34,9 @@ const Header = () => {
               alt="Menu Icon"
               className={`transform transition-all duration-500 -rotate-90  ${
                 isMenuOpen ? "rotate-[90deg]" : ""
-              } ${isMenuButtonHovered ? "w-[36px] h-[36px]" : "w-[40px] h-[40px]"} `}
+              } ${
+                isMenuButtonHovered ? "w-[36px] h-[36px]" : "w-[40px] h-[40px]"
+              } `}
             />
           </button>
         </div>
@@ -45,19 +47,20 @@ const Header = () => {
       </div>
 
       <div
-  className={`sm:hidden fixed right-0 pl-[34px] w-[200px] h-[360px] rounded-l-full py-4 shadow-lg flex flex-col items-center justify-center transform transition-transform duration-1000 ${
-    isMenuOpen ? "translate-x-0" : "translate-x-full"
-  }`}
-  style={{
-    backgroundImage: `url(${PlanetImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "left",
-    backgroundRepeat: "no-repeat",
-    maskImage: "radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0, 0, 0, 0) 100%)",
-    WebkitMaskImage:
-      "radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)",
-  }}
->
+        className={`sm:hidden fixed right-0 pl-[34px] w-[200px] h-[360px] rounded-l-full py-4 shadow-lg flex flex-col items-center justify-center transform transition-transform duration-1000 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+        style={{
+          backgroundImage: `url(${PlanetImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "35% center",
+          backgroundRepeat: "no-repeat",
+          maskImage:
+            "radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0, 0, 0, 0) 100%)",
+          WebkitMaskImage:
+            "radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)",
+        }}
+      >
         <MenuList className="flex flex-col items-center gap-6" />
       </div>
     </nav>
