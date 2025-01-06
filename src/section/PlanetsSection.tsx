@@ -19,7 +19,7 @@ const PlanetsSection = () => {
           className="w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] transition-[width,height] duration-1000 bg-center bg-cover rounded-full flex items-center justify-center text-white text-[30px] font-bold animate-smoothBounce"
           style={{
             backgroundImage: `url(${Planet2})`,
-            animationDelay: "1s",
+            animationDelay: "2s",
           }}
         >
           2000 planets
@@ -28,7 +28,7 @@ const PlanetsSection = () => {
           className="w-[220px] h-[220px] xl:w-[280px] xl:h-[280px] transition-[width,height] duration-1000 bg-center bg-cover rounded-full flex items-center justify-center text-dark text-[28px] font-bold animate-smoothBounce"
           style={{
             backgroundImage: `url(${Planet3})`,
-            animationDelay: "2s",
+            animationDelay: "1s",
           }}
         >
           2 years
