@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import WelcomeSection from "./section/WelcomeSection";
 import PlatesSection from "./section/PlatesSection";
 import FooterSection from "./section/FooterSection";
+import PlanetsSection from "./section/PlanetsSection";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,8 +22,10 @@ function App() {
     <div className="w-full bg-dark">
       <div>
         <WelcomeSection />
+        <PlanetsSection />
         <PlatesSection />
         <FooterSection />
+       
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Picture3 from "../assets/images/cards/pic3.webp";
 import Picture4 from "../assets/images/cards/pic7.jpg";
 import Picture5 from "../assets/images/cards/pic8.webp";
 import Picture6 from "../assets/images/cards/pic6.jpg";
-import Wave from "../assets/videos/blue-wave.gif";
+// import Wave from "../assets/videos/blue-wave.gif";
 
 const AboutSection = () => {
   const cards = [
@@ -49,7 +49,7 @@ const AboutSection = () => {
 
   return (
     <section className="w-full px-[24px] relative">
-      <div className="bg-dark absolute bottom-[-170px] left-0 w-full h-[200px]">
+      {/* <div className="bg-dark absolute bottom-[-170px] left-0 w-full h-[200px]">
         <img 
         data-aos="fade-right"
           data-aos-delay="1000"
@@ -57,7 +57,7 @@ const AboutSection = () => {
           alt="Wave background"
           className="w-full h-full object-cover"
         />
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[50px] justify-items-center relative z-10">
         {cards.map((card, index) => (
           <AboutCard
