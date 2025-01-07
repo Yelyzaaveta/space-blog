@@ -5,7 +5,7 @@ const FooterSection = () => {
         <div className="flex gap-[40px] mb-[20px]">
           <div>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/yelyzaveta-o-14517b298"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-gray-700 transition-colors"
@@ -16,7 +16,7 @@ const FooterSection = () => {
 
           <div>
             <a
-              href="https://github.com"
+              href="https://github.com/Yelyzaaveta"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light hover:text-gray-700 transition-colors"
