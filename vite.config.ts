@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
+  base: 'space-blog/',
+  server: {  
     host: '0.0.0.0', 
   },
    base: '/space-blog/',
