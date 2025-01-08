@@ -3,6 +3,7 @@ import WelcomeSection from "./section/WelcomeSection";
 import PlatesSection from "./section/PlatesSection";
 import FooterSection from "./section/FooterSection";
 import PlanetsSection from "./section/PlanetsSection";
+import ContactSection from "./section/ContactSection";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,8 +25,8 @@ function App() {
         <WelcomeSection />
         <PlanetsSection />
         <PlatesSection />
-        <FooterSection />
-       
+        <ContactSection />
+        <FooterSection />      
       </div>
     </div>
   );
