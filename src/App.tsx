@@ -4,6 +4,7 @@ import PlatesSection from "./section/PlatesSection";
 import FooterSection from "./section/FooterSection";
 import PlanetsSection from "./section/PlanetsSection";
 import ContactSection from "./section/ContactSection";
+import SliderSection from "./section/SliderSection";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,9 +25,10 @@ function App() {
       <div>
         <WelcomeSection />
         <PlanetsSection />
+        <SliderSection />
         <PlatesSection />
         <ContactSection />
-        <FooterSection />      
+        <FooterSection />
       </div>
     </div>
   );
